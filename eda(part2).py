@@ -48,6 +48,6 @@ def graph(x,y,y_pred,out=None,xlab='x',ylab='y'): #method created to esaily vsia
 a=dframe('Team_Data.csv')
 b=dframe('clean_data.csv')
 b=b.sort_values('Year')
-ind=['aPTS','PTS']
+ind=['aPTS','PTS'] #change this line to try different attributes 
 x,y,z=poly_analyze(ind,'W',a,f=1,cross_val=True)
 graph(x[:,1],y,z,xlab='PTS and aPTS',ylab='W')
